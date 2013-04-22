@@ -4,10 +4,8 @@
 //
 
 #define MAX_IMAGE_COUNT 5
-#define UPDATE_TIME 10
-#define KEEP_TIME 30
-//60
-//180
+#define UPDATE_TIME 60
+#define KEEP_TIME 180
 
 #import <UIKit/UIKit.h>
 #import "UploadServer.h"
