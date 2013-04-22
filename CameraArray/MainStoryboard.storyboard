@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LMV-Bj-F6r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Main-->
+        <scene sceneID="pC2-Ue-4VL">
+            <objects>
+                <viewController title="Main" id="dnQ-3I-fw0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1i-qe-7i0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpP-Qi-BnQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Join a photo shoot">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oAF-iO-M2f" kind="push" id="MeC-0z-vmv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa2-RU-boi">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Host a photo shoot">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PLD-7Q-MLM" kind="push" id="0cj-MV-LfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOh-bV-FV6">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3b1-RV-4zF" kind="push" id="HjC-gv-6Am"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DOh-bV-FV6" firstAttribute="centerX" secondItem="Wa2-RU-boi" secondAttribute="centerX" type="default" id="0BO-Yc-ODE"/>
+                            <constraint firstItem="Wa2-RU-boi" firstAttribute="top" secondItem="Q1i-qe-7i0" secondAttribute="top" constant="115" id="5EZ-mg-Kgc"/>
+                            <constraint firstItem="Wa2-RU-boi" firstAttribute="leading" secondItem="Q1i-qe-7i0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ItE-cb-RPG"/>
+                            <constraint firstItem="DOh-bV-FV6" firstAttribute="top" secondItem="Q1i-qe-7i0" secondAttribute="top" constant="198" id="KpZ-qa-u5E"/>
+                            <constraint firstItem="RpP-Qi-BnQ" firstAttribute="top" secondItem="Q1i-qe-7i0" secondAttribute="top" constant="47" id="f5r-NZ-LSz"/>
+                            <constraint firstAttribute="trailing" secondItem="RpP-Qi-BnQ" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="off-t3-yQq"/>
+                            <constraint firstAttribute="trailing" secondItem="Wa2-RU-boi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ud2-ly-ZPB"/>
+                            <constraint firstItem="RpP-Qi-BnQ" firstAttribute="leading" secondItem="Q1i-qe-7i0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yqS-NT-rD5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Array" id="ujW-Zi-n80"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jS1-L2-I5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="-81"/>
+        </scene>
+        <!--View Controller - Help-->
+        <scene sceneID="AOu-UH-X6l">
+            <objects>
+                <viewController id="3b1-RV-4zF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trH-So-hde">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVN-Hu-mzg">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Camera Array enables you to join a photo shoot connecting multiple camera devices and photographers. One device is required as a host and will not take photos itself. Once one device has entered the host mode any devices in the same wifi network are able to join the photo shoot. Each joined device will send the photographed images to the host device. The host device can view a clever real time photo gallery and store the images for later use.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NVN-Hu-mzg" firstAttribute="top" secondItem="trH-So-hde" secondAttribute="top" type="default" id="64r-qf-5cw"/>
+                            <constraint firstItem="NVN-Hu-mzg" firstAttribute="bottom" secondItem="trH-So-hde" secondAttribute="bottom" type="default" id="Lj2-9m-FPi"/>
+                            <constraint firstItem="NVN-Hu-mzg" firstAttribute="trailing" secondItem="trH-So-hde" secondAttribute="trailing" type="default" id="Ndg-ff-VAv"/>
+                            <constraint firstItem="NVN-Hu-mzg" firstAttribute="leading" secondItem="trH-So-hde" secondAttribute="leading" type="default" id="lce-Gy-Vor"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="7i9-ek-qtx">
+                        <barButtonItem key="backBarButtonItem" title="Main" id="BLd-oG-gGv"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKO-9l-BeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="685"/>
+        </scene>
+        <!--Host View Controller - Join Photo Session-->
+        <scene sceneID="E4X-Kv-81m">
+            <objects>
+                <viewController title="Join Photo Session" id="PLD-7Q-MLM" customClass="HostViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Wv-Gf-G4q">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="A photo shoot name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-ev-kiU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PLD-7Q-MLM" id="qSl-q4-t7b"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Device name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-ti-MdK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" type="user" id="1SX-Mz-Qkl"/>
+                                    <constraint firstAttribute="height" constant="21" id="HF6-yM-8Fr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rid-tB-pkj">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Open the photo shoot">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startHost:" destination="PLD-7Q-MLM" eventType="touchUpInside" id="xsO-7s-RUs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dSj-ev-kiU" firstAttribute="top" secondItem="9Wv-Gf-G4q" secondAttribute="top" constant="20" symbolic="YES" type="user" id="3TW-45-WnI"/>
+                            <constraint firstAttribute="trailing" secondItem="dSj-ev-kiU" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="87H-3c-ieD"/>
+                            <constraint firstItem="dSj-ev-kiU" firstAttribute="leading" secondItem="9Wv-Gf-G4q" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="eWf-Rr-hIs"/>
+                            <constraint firstItem="bsO-ti-MdK" firstAttribute="top" secondItem="dSj-ev-kiU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="eg8-51-DkD"/>
+                            <constraint firstItem="Rid-tB-pkj" firstAttribute="top" secondItem="9Wv-Gf-G4q" secondAttribute="top" constant="100" id="tSw-iX-9e5"/>
+                            <constraint firstItem="Rid-tB-pkj" firstAttribute="leading" secondItem="9Wv-Gf-G4q" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="u91-qn-Iw9"/>
+                            <constraint firstItem="bsO-ti-MdK" firstAttribute="leading" secondItem="9Wv-Gf-G4q" secondAttribute="leading" constant="29" type="user" id="uJG-tK-C2c"/>
+                            <constraint firstAttribute="trailing" secondItem="Rid-tB-pkj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="z1j-8r-tKi"/>
+                            <constraint firstAttribute="trailing" secondItem="bsO-ti-MdK" secondAttribute="trailing" constant="28" type="user" id="zhj-dr-hTG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Host" id="e2w-tZ-PuH">
+                        <barButtonItem key="backBarButtonItem" title="Main" id="Yry-FL-nAi"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="deviceNameLabel" destination="bsO-ti-MdK" id="Iv0-il-a6t"/>
+                        <outlet property="nameTextField" destination="dSj-ev-kiU" id="4Gc-fp-qCv"/>
+                        <segue destination="J99-ZD-sMs" kind="push" identifier="server" id="E3f-4l-eji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdM-Ac-hoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="303"/>
+        </scene>
+        <!--Server View Controller - Hosted Photo Shoot-->
+        <scene sceneID="EL5-Cd-DQE">
+            <objects>
+                <viewController id="J99-ZD-sMs" customClass="ServerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nNW-XE-gDi">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hosted Photo Shoot" id="hqE-HJ-qo6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNx-OQ-vOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="303"/>
+        </scene>
+        <!--Camera View Controller - Join-->
+        <scene sceneID="apr-Ms-ziH">
+            <objects>
+                <tableViewController id="oAF-iO-M2f" customClass="CameraViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oRN-Lj-8r5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Service" textLabel="r7e-Yj-Uag" detailTextLabel="UZl-3i-CRY" style="IBUITableViewCellStyleSubtitle" id="c7Z-2B-0lJ">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-Yj-Uag">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-3i-CRY">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oAF-iO-M2f" id="sQX-a5-2o5"/>
+                            <outlet property="delegate" destination="oAF-iO-M2f" id="htu-Ul-jfS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Join" id="y3d-o4-7Mu">
+                        <barButtonItem key="backBarButtonItem" title="Main" id="H8d-Lo-INy"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ra-Aj-9FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="-405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OS4-5Z-PGe">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="LMV-Bj-F6r" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j68-zR-tCv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lix-1o-pCN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dnQ-3I-fw0" kind="relationship" relationship="rootViewController" id="tie-vM-EAb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2j-4N-Oba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="-81"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CameraViewController" superclassName="JoinViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+        </class>
+        <class className="HostViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HostViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startHost:"/>
+                <relationship kind="outlet" name="deviceNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="JoinViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JoinViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ServerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ServerViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
