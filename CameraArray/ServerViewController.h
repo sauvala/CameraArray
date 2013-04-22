@@ -21,5 +21,6 @@
 - (void)updateImages;
 - (void)repositionImages;
 - (void)positionImageWithIndex:(NSUInteger)index x:(CGFloat)x y:(CGFloat)y w:(CGFloat)w h:(CGFloat)h;
+- (IBAction)viewTapped:(id)sender;
 
 @end

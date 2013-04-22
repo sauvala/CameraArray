@@ -33,6 +33,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     //[self stopSearch];
+    [self hideActivityIndicator];
 }
 
 - (void)startSearch
@@ -141,7 +142,6 @@
     #if DEBUG
     NSLog(@"Service address resolved.");
     #endif
-    NSAssert(NO, @"Must inherit and override netServiceDidResolveAddress!");
 }
 
 - (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict

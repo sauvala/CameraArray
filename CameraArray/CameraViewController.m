@@ -11,9 +11,7 @@
 
 - (void)netServiceDidResolveAddress:(NSNetService *)sender
 {
-    #if DEBUG
-    NSLog(@"Service address resolved and starting camera.");
-    #endif
+    [super netServiceDidResolveAddress:sender];
     if (![self startCameraControllerFromViewController:self usingDelegate:self])
     {
         [self showAlertWithTitle:@"Camera required!" message:@"Your device does not report to have a camera."];
@@ -25,6 +23,7 @@
     if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil)|| (controller == nil))
     {
         #ifdef DEBUG
+        NSLog(@"Debug mode sends Grumpy to the server.");
         [self sendTestImageToServer];
         #endif
         return NO;

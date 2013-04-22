@@ -14,8 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
+    // Configure HTTP server logging to console.
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
     return YES;

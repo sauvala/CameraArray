@@ -183,4 +183,8 @@
     [self repositionImages];
 }
 
+- (IBAction)viewTapped:(id)sender {
+    [self.navigationController setNavigationBarHidden:!self.navigationController.navigationBarHidden animated:YES];
+}
+
 @end
