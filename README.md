@@ -8,4 +8,5 @@ the photo shoot. Each joined device will send the photographed images to the hos
 The host device can view a real time photo gallery.
 
 The project was started as an iOS learning experiment for course at Aalto University,
-Department of Media Technology.
+Department of Media Technology. (Tag: CourseSubmission)
+
