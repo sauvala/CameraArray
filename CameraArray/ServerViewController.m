@@ -1,7 +1,10 @@
-//
-//  ServerViewController.m
-//  CameraArray
-//
+/*
+ *  ServerViewController.m
+ *  CameraArray
+ *
+ *  Viewcontroller of the server.
+ *  Shows the images.
+ */
 
 #import "ServerViewController.h"
 #import "UploadedImage.h"

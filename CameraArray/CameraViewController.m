@@ -2,6 +2,11 @@
 //  CameraViewController.m
 //  CameraArray
 //
+/*
+ *  Controlling the camera
+ *  Opening the camera and sending photos to the server
+ *
+ */
 
 #import "CameraViewController.h"
 
@@ -18,6 +23,7 @@
     }
 }
 
+// Start the camera interface
 - (BOOL)startCameraControllerFromViewController:(UIViewController*)controller usingDelegate:(id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>)delegate
 {
     if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) || (delegate == nil)|| (controller == nil))
@@ -49,6 +55,7 @@
     return YES;
 }
 
+// Parse the image from taken data and send it to the server
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
@@ -60,6 +67,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+// Send the taken picture to the server
 - (void)sendImageToServer:(UIImage *)image
 {
     NSURL *url = nil;
@@ -96,11 +105,13 @@
     #endif
 }
 
+// Send the grumpy cat to the server in testing purpose
 - (void)sendTestImageToServer
 {
     [self sendImageToServer:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Grumpy-Cat" ofType:@"jpg"]]];
 }
 
+// Sending the photo failed
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     #if DEBUG

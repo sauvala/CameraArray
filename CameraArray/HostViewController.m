@@ -1,7 +1,11 @@
-//
-//  HostViewController.m
-//  CameraArray
-//
+/*
+ *  HostViewController.m
+ *  CameraArray
+ *
+ *  Hosting a photoshoot session
+ *
+ *
+ */
 
 #define SERVER_SEGUE @"server"
 

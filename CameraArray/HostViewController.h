@@ -1,7 +1,11 @@
-//
-//  HostViewController.h
-//  CameraArray
-//
+/*
+ *  HostViewController.h
+ *  CameraArray
+ *
+ *  Hosting a photoshoot session
+ *
+ *
+ */
 
 #import <UIKit/UIKit.h>
 

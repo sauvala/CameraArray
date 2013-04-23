@@ -1,7 +1,11 @@
-//
-//  ServerViewController.h
-//  CameraArray
-//
+/*
+ *  ServerViewController.h
+ *  CameraArray
+ *
+ *  Viewcontroller of the server.
+ *  Shows the images.
+ *
+ */
 
 #define MAX_IMAGE_COUNT 5
 #define UPDATE_TIME 60

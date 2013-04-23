@@ -1,7 +1,13 @@
-//
-//  JoinViewController.m
-//  CameraArray
-//
+/*
+ *  JoinViewController.m
+ *  CameraArray
+ *
+ *  Search and join to a photoshoot session
+ *
+ *
+ *
+ */
+
 
 #define CELL_ID @"Service"
 #define RESOLVE_TIMEOUT_SEC 5
@@ -36,6 +42,8 @@
     [self hideActivityIndicator];
 }
 
+
+// Search services
 - (void)startSearch
 {
     [self stopSearch];
@@ -65,6 +73,8 @@
     [self hideActivityIndicator];
 }
 
+
+// Service found
 - (void)netServiceBrowser:(NSNetServiceBrowser *)netServiceBrowser didFindService:(NSNetService *)netService moreComing:(BOOL)moreServicesComing {
     #if DEBUG
     NSLog(@"NSNetService found: %@", netService);
@@ -80,6 +90,7 @@
     }
 }
 
+// Remove service
 - (void)netServiceBrowser:(NSNetServiceBrowser *)netServiceBrowser didRemoveService:(NSNetService *)netService moreComing:(BOOL)moreServicesComing {
     #if DEBUG
     NSLog(@"NSNetService removed: %@", netService);

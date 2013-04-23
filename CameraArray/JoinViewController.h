@@ -1,7 +1,11 @@
-//
-//  JoinViewController.h
-//  CameraArray
-//
+/*
+ *  JoinViewController.h
+ *  CameraArray
+ *  Search and join to a photoshoot session
+ *
+ *
+ *
+ */
 
 #import <UIKit/UIKit.h>
 

@@ -2,6 +2,11 @@
 //  CameraViewController.h
 //  CameraArray
 //
+/*
+ *  Controlling the camera
+ *  Opening the camera and sending photos to the server
+ *
+ */
 
 #import <UIKit/UIKit.h>
 #import "JoinViewController.h"
